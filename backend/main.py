@@ -81,6 +81,10 @@ class ChatRequest(BaseModel):
 async def health():
     return {"status": "ok", "model": "gemini-2.5-flash"}
 
+@app.get("/")
+def home():
+    return {"message": "Smart AI Assistant API is running"}
+
 
 # -------------------------
 # Chat Endpoint
@@ -135,7 +139,3 @@ async def chat(request: ChatRequest):
             "X-Accel-Buffering": "no",
         },
     )
-
-@app.get("/")
-def home():
-    return {"message": "Smart AI Assistant API is running"}
