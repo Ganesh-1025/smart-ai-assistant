@@ -135,3 +135,7 @@ async def chat(request: ChatRequest):
             "X-Accel-Buffering": "no",
         },
     )
+
+@app.get("/")
+def home():
+    return {"message": "Smart AI Assistant API is running"}
