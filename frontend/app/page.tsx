@@ -187,7 +187,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="model-badge">
-            gemini-2.0-flash
+            gemini-2.5-flash
           </div>
         </header>
 
