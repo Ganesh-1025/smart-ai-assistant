@@ -1,4 +1,4 @@
-const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "https://smart-ai-assistant-backend.onrender.com";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'https://smart-ai-assistant-backend.onrender.com';
 
 export interface Message {
   id: string;
