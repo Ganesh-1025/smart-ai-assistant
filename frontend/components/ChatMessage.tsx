@@ -64,7 +64,7 @@ export default function ChatMessage({ message, isStreaming = false }: ChatMessag
                 rehypePlugins={[rehypeHighlight]}
                 components={{
                   // @ts-expect-error – react-markdown types
-                  code({ node, inline, className, children, ...props }) {
+                  code({ inline, className, children, ...props }) {
                     const codeContent = String(children).replace(/\n$/, '');
                     if (!inline && (className || codeContent.includes('\n'))) {
                       return (

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, useCallback, useId } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import ChatMessage from '@/components/ChatMessage';
 import ModeSelector, { Mode, MODES } from '@/components/ModeSelector';
 import ChatInput from '@/components/ChatInput';
